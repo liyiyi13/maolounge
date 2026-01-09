@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---stylesheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main id="about">
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="images/logo.png" alt="The Mao Lounge logo">
+                <nav>
+                    <ul>
+                        <li class="toggle"><i class='fa-solid fa-bars fa-lg'></i></li>
+                        <li class="item"><a href="home.html">home</a></li>
+                        <li class="item"><a href="dessertmenu.html">desserts</a></li>
+                        <li class="item"><a href="drinksmenu.html">drinks</a></li>
+                        <li class="item"><a href="ourcats.html">cats</a></li>
+                        <li class="item"><a href="about.html">about</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="header-title">About Us</h1>
+            <img class="exterior" src="images/coffeeshopexterior.jpg" alt="exterior">
+
+            <div class="mission">
+                <h1>Our Mission</h1>
+                <h2 class="missionstatement">Providing a warm, welcoming space for rescue cats to rest
+                    while they wait for their forever homes. Rooted in Asian traditions of hospitality and
+                    connection, The Mao Lounge offers a place where both people and cats can feel at peace. Every cup
+                    served
+                    and
+                    every purr shared supports our goal of giving these beloved companions the love and care they
+                    deserve.
+                </h2>
+
+            </div>
+            <div class="maomeaning">
+                <h2>The Meaning Behind Mao</h2>
+                <div class="banner">
+                    <img src="images/banner.png" alt="banner">
+                </div>
+                <p class="meaning-text">Our founder wanted to integrate both her Chinese heritage and her love for cats
+                    into one place, hence
+                    the
+                    birth of The Mao Lounge. "Mao" means cat in Mandarin, and in our coffee shop, we strive to uphold
+                    Asian
+                    hospitality principles while saving cats from euthanization.</p>
+
+            </div>
+            <h2 class="inspo">The inspiration</h2>
+            <img class="moon" src="images/cat.jpg" alt="cat">
+            <p class="most-text">Meet Moon, short for Mooncake (a traditional Chinese dessert eaten during the Lunar
+                Festival). Our
+                founder was in her 1st year of grad school when she found Moon. Our founder was struggling with
+                balancing school work and a corporate job- not to mention her increasing lonliness in a city she was
+                unfamiliar with.
+                One day, she was walking through her typical route after class. Her shoelaces were untied, and she
+                caught the attention of Moon who followed her to the bus stop. Moon seemed to take to our founder
+                immediately, and it was clear that Moon had to go home with her.
+                Had our founder not taken Moon back with her, Moon would have probably been caught and taken to the
+                pound where she would have been put down. With this realization, our founder wanted to create a place
+                where cats could safely stay until they found a home to go to.
+            </p>
+
+
+
+
+        </div>
+        <footer>
+            <div class="hours">
+                <h2>Hours of Operations:</h2>
+                <p>Mon-Fri<br>8am - 8pm</p>
+                <p>Sat-Sun <br>10am - 8pm</p>
+            </div>
+            <div class="phone">
+                <h2>Phone number:</h2>
+                <p> 224-567-9890 </p>
+            </div>
+            <div>
+                <h2>email: </h2>
+                <p>themaolounge@gmail.com</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+
+
+
+</body>
+
+</html>

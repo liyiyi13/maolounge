@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---stylesheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main id="desserts">
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="images/logo.png" alt="The Mao Lounge logo">
+                <nav>
+                    <ul>
+                        <li class="toggle"><i class='fa-solid fa-bars fa-lg'></i></li>
+                        <li class="item"><a href="home.html">home</a></li>
+                        <li class="item"><a href="dessertmenu.html">desserts</a></li>
+                        <li class="item"><a href="drinksmenu.html">drinks</a></li>
+                        <li class="item"><a href="ourcats.html">cats</a></li>
+                        <li class="item"><a href="about.html">about</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <h1>Bakery</h1>
+            <img class="doodle" src="images/dessertsincoming.png" alt="doodle">
+            <h1>Today's Menu</h1>
+            <div class="banner">
+                <img src="images/banner.png" alt="banner">
+            </div>
+
+            <div class="menu-general">
+
+                <a href="#sandwiches">sandwiches</a>
+                <a href="#parfaits">parfaits</a>
+                <a href="#bakedgoods">baked goods</a>
+
+            </div>
+
+
+
+            <!-- Sandwiches -->
+            <section id="sandwiches" class="menu-bakery">
+                <h2>Sandos</h2>
+                <div class="table">
+                    <table class="table-details">
+                        <tr class="table-header">
+                            <td><strong>item</strong></td>
+                            <td><strong>price</strong></td>
+                        </tr>
+                        <tr>
+                            <td>strawberry cream</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>grape cream</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>mango cream</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>assorted fruit</td>
+                            <td>$4.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Parfaits -->
+            <section id="parfaits" class="menu-bakery">
+                <h2>Parfaits</h2>
+                <div class="table">
+                    <table class="table-details">
+                        <tr class="table-header">
+                            <td><strong>item</strong></td>
+                            <td><strong>price</strong></td>
+                        </tr>
+                        <tr>
+                            <td>mango chia seed</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>mixed berry</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>peanut butter honey banana</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>strawberry cheesecake</td>
+                            <td>$7.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </section>
+
+            <!-- Baked Goods -->
+            <section id="bakedgoods" class="menu-bakery">
+                <h2>Baked Goods</h2>
+                <div class="table">
+                    <table class="table-details">
+                        <tr class="table-header">
+                            <td><strong>item</strong></td>
+                            <td><strong>price</strong></td>
+                        </tr>
+                        <tr>
+                            <td>chocolate croissant</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>chocolate chip cookie</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>cinnamon roll</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>raspberry lemon crumble muffin</td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>fudge brownie</td>
+                            <td>$4.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="hours">
+            <h2>Hours of Operations:</h2>
+            <p>Mon-Fri<br>8am - 8pm</p>
+            <p>Sat-Sun <br>10am - 8pm</p>
+        </div>
+        <div class="phone">
+            <h2>Phone number:</h2>
+            <p> 224-567-9890 </p>
+        </div>
+        <div>
+            <h2>email: </h2>
+            <p>themaolounge@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+
+</body>
+
+</html>
